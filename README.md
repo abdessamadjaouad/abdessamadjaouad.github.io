@@ -1,6 +1,6 @@
 <!-- Profile Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6c63ff,100:00c896&height=200&section=header&text=Hi%20there,%20I'm%20[Your Name]!&fontSize=35&fontColor=ffffff" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6c63ff,100:00c896&height=200&section=header&text=Hi%20there,%20I'm%20Abdessamad JAOUAD!&fontSize=35&fontColor=ffffff" />
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 ### 👨‍💻 About Me
 
 ```yaml
-name: [Your Full Name]
+name: Abdessamad JAOUAD
 from: Morocco 🇲🇦
 status: Master’s Student @ ENSAM Casablanca 🏫
 field: Big Data & Internet of Things 🌐
