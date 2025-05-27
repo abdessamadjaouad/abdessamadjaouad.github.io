@@ -10,48 +10,88 @@
       font-family: 'Quicksand', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #e0f7fa, #b2ebf2);
-      color: #00796b;
+      background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+      color: #0d47a1;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
     }
     .container {
-      max-width: 600px;
-      background: white;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      max-width: 700px;
+      background: #ffffff;
+      padding: 50px 40px;
+      border-radius: 20px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.1);
     }
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
+      font-size: 2.7em;
+      color: #1565c0;
+      margin-bottom: 0.3em;
     }
     .logo {
-      width: 80px;
+      width: 100px;
       margin-bottom: 1em;
     }
     p {
-      font-size: 1.2em;
+      font-size: 1.1em;
+      color: #1a237e;
     }
     .badge {
-      margin-top: 20px;
+      margin-top: 30px;
       display: inline-block;
-      background: #4db6ac;
-      padding: 8px 20px;
+      background: #1976d2;
+      padding: 10px 25px;
       border-radius: 30px;
       color: white;
       font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .services {
+      margin-top: 2em;
+      text-align: left;
+    }
+    .services h2 {
+      color: #1565c0;
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    .services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .services li {
+      margin: 10px 0;
+      padding-left: 1.2em;
+      position: relative;
+    }
+    .services li::before {
+      content: "🩺";
+      position: absolute;
+      left: 0;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" class="logo" alt="Healthics Logo" />
-    <h1>Healthics is Coming Soon 🩺</h1>
-    <p>Your personal digital health assistant is on its way to help you manage your wellness smarter, faster, and safer.</p>
+    <h1>Healthics is Coming Soon</h1>
+    <p>Your all-in-one digital health assistant, revolutionizing how you manage your medical records, monitor symptoms, and access health services — all in one secure place.</p>
+
+    <div class="services">
+      <h2>🌐 What Healthics Offers:</h2>
+      <ul>
+        <li>Secure Medical Document Upload and Storage</li>
+        <li>Health Chatbot for Instant Medical Queries</li>
+        <li>Symptom Checker powered by AI</li>
+        <li>Personalized Patient Profile Management</li>
+        <li>Emergency Contact Integration</li>
+        <li>Interactive Health Insights and Stats</li>
+        <li>Admin Tools for Monitoring & User Management</li>
+      </ul>
+    </div>
+
     <span class="badge">www.healthics.me</span>
   </div>
 </body>
