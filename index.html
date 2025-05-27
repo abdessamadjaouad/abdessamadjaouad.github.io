@@ -2,97 +2,157 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Healthics – Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Quicksand', sans-serif;
       margin: 0;
       padding: 0;
       background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
       color: #0d47a1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo-text {
+      font-size: 28px;
+      font-weight: 700;
+      color: #2196f3;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
       text-align: center;
     }
-    .container {
-      max-width: 700px;
-      background: #ffffff;
-      padding: 50px 40px;
-      border-radius: 20px;
-      box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+
+    .container h1 {
+      font-size: 1.9em;
+      color: #0d47a1;
+      margin-bottom: 30px;
     }
-    h1 {
-      font-size: 2.7em;
-      color: #1565c0;
-      margin-bottom: 0.3em;
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      justify-items: center;
     }
-    .logo {
-      width: 100px;
-      margin-bottom: 1em;
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 220px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
     }
-    p {
-      font-size: 1.1em;
-      color: #1a237e;
+
+    .card:hover {
+      transform: translateY(-5px);
     }
-    .badge {
-      margin-top: 30px;
-      display: inline-block;
-      background: #1976d2;
-      padding: 10px 25px;
-      border-radius: 30px;
-      color: white;
+
+    .card-header {
+      background-color: #1976d2;
+      color: #fff;
+      padding: 16px;
+      font-size: 18px;
       font-weight: bold;
-      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    .services {
-      margin-top: 2em;
+
+    .card-header span {
+      font-size: 1.3em;
+    }
+
+    .card-body {
+      padding: 16px;
       text-align: left;
     }
-    .services h2 {
-      color: #1565c0;
-      font-size: 1.5em;
-      margin-bottom: 0.5em;
+
+    .card-body h3 {
+      font-size: 16px;
+      margin: 0 0 8px;
+      color: #0d47a1;
     }
-    .services ul {
-      list-style-type: none;
-      padding: 0;
+
+    .card-body p {
+      font-size: 14px;
+      color: #444;
+      margin: 0;
     }
-    .services li {
-      margin: 10px 0;
-      padding-left: 1.2em;
-      position: relative;
-    }
-    .services li::before {
-      content: "🩺";
-      position: absolute;
-      left: 0;
+
+    @media (max-width: 500px) {
+      .card-header {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <div class="logo-text">Healthics</div>
+  </header>
+
   <div class="container">
-    <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" class="logo" alt="Healthics Logo" />
-    <h1>Healthics is Coming Soon</h1>
-    <p>Your all-in-one digital health assistant, revolutionizing how you manage your medical records, monitor symptoms, and access health services — all in one secure place.</p>
+    <h1>Digitize and manage your complete health journey</h1>
 
-    <div class="services">
-      <h2>🌐 What Healthics Offers:</h2>
-      <ul>
-        <li>Secure Medical Document Upload and Storage</li>
-        <li>Health Chatbot for Instant Medical Queries</li>
-        <li>Symptom Checker powered by AI</li>
-        <li>Personalized Patient Profile Management</li>
-        <li>Emergency Contact Integration</li>
-        <li>Interactive Health Insights and Stats</li>
-        <li>Admin Tools for Monitoring & User Management</li>
-      </ul>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-header"><span>01</span> 📅</div>
+        <div class="card-body">
+          <h3>Consultation Scheduling</h3>
+          <p>Schedule and manage your medical appointments easily</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span>02</span> 📄</div>
+        <div class="card-body">
+          <h3>Medical Document Access</h3>
+          <p>Access your medical reports and test results securely online</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span>03</span> 🗂️</div>
+        <div class="card-body">
+          <h3>Digital Medical Records</h3>
+          <p>Digitize and maintain a complete history of your medical records</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span>04</span> 🏥</div>
+        <div class="card-body">
+          <h3>Healthcare Provider Network</h3>
+          <p>Connect with our network of trusted healthcare providers</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span>05</span> 🔗</div>
+        <div class="card-body">
+          <h3>Medical Record Sharing</h3>
+          <p>Securely share your medical records with your healthcare providers</p>
+        </div>
+      </div>
     </div>
-
-    <span class="badge">www.healthics.me</span>
   </div>
+
 </body>
 </html>
